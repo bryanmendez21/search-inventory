@@ -13,7 +13,7 @@ public class SearchInventory {
         System.out.print("fruit price:");
         String price = userInput.nextLine();*/
 
-        //System.out.println(getInventory());
+        System.out.println(getInventory());
     }
     // Method
     public static String getInventory(/*String id,String fruitName, String price*/){
@@ -26,6 +26,12 @@ public class SearchInventory {
         fruits.add("4|watermelon|5.99");
         fruits.add("5|strawberry|2.99");
 
+
+        String result = "";
+        for(int i = 0; i < fruits.size(); i++)
+            result += fruits.get(i) + "\n";
+
+        return result;
 
 
     }
